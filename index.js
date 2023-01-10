@@ -7,10 +7,10 @@ import dotenv from 'dotenv';
 //import {express } from 'express';
 const app=express();
 import { MongoClient } from 'mongodb';
-
-process.env.PORT;
-app.use(express.json());
 dotenv.config();
+const PORT=process.env.PORT;
+app.use(express.json());
+
 /*const user=[
     {
       "name": "Martha Abernathy",
